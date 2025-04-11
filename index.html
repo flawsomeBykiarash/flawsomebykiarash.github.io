@@ -6,34 +6,69 @@
   <title>Flawsome by Kiarash</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #f4f4f4, #e2e2e2);
-      color: #2c2c2c;
+      margin: 0;
+      background: linear-gradient(to bottom right, #f5f3f1, #e4e0db);
       font-family: 'Georgia', serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      height: 100vh;
+    }
+    h1 {
+      font-size: 4rem;
+      color: goldenrod;
+      text-shadow: 1px 1px 3px #aaa;
       margin: 0;
     }
-
-    .logo {
-      font-size: 3rem;
-      font-weight: bold;
+    h2 {
+      font-size: 2rem;
       color: goldenrod;
-      text-shadow: 1px 1px 5px #b79c53;
+      font-weight: normal;
+      margin: 10px 0 40px;
     }
-
-    .tagline {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #666;
-      font-style: italic;
+    .button-container {
+      display: flex;
+      gap: 20px;
+    }
+    .btn {
+      background: #f7f2eb;
+      border: none;
+      border-radius: 40px;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #7a5a35;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+    .btn img {
+      width: 20px;
+      height: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="logo">FLAWSOME</div>
-  <div class="tagline">by Kiarash</div>
+  <h1>FLAWSOME</h1>
+  <h2>by Kiarash</h2>
+
+  <div class="button-container">
+    <a class="btn" href="https://instagram.com" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram"/>
+      Instagram
+    </a>
+    <a class="btn" href="https://t.me" target="_blank">
+      <img src="https://img.icons8.com/ios-filled/50/000000/telegram-app.png" alt="Telegram"/>
+      Telegram
+    </a>
+  </div>
 </body>
 </html>
